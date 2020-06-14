@@ -35,3 +35,9 @@ Route::prefix('/categories')->group(function () {
     Route::post('/edit/{id}', 'CategoryController@update');
     Route::get('/delete/{id}', 'CategoryController@destroy');
 });
+
+Route::prefix('/customers')->group(function () {
+    Route::get('/', 'CustomerController@index');
+    Route::get('/new', 'CustomerController@create');
+    Route::post('/', 'CustomerController@store');
+});

@@ -8,8 +8,8 @@
         <li @if ($current == 'home') class="nav-item active"  @else  class="nav-item" @endif >
           <a class="nav-link" href="/">Home </a>
         </li>
-        <li @if ($current == 'customer') class="nav-item active"  @else  class="nav-item" @endif>
-          <a class="nav-link" href="/customer">Customers</a>
+        <li @if ($current == 'customers') class="nav-item active"  @else  class="nav-item" @endif>
+          <a class="nav-link" href="/customers">Customers</a>
         </li>
         <li @if ($current == 'products') class="nav-item active"  @else  class="nav-item" @endif>
           <a class="nav-link" href="/products">Products</a>
