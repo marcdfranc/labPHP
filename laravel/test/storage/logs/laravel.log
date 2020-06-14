@@ -1,0 +1,147 @@
+[2020-05-31 13:13:30] local.ERROR: There are no commands defined in the "routes" namespace.
+
+Did you mean this?
+    route {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"routes\" namespace.
+
+Did you mean this?
+    route at /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php:574)
+[stacktrace]
+#0 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Descriptor/ApplicationDescription.php(91): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Descriptor/ApplicationDescription.php(68): Symfony\\Component\\Console\\Descriptor\\ApplicationDescription->inspectApplication()
+#2 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Descriptor/TextDescriptor.php(202): Symfony\\Component\\Console\\Descriptor\\ApplicationDescription->getCommands()
+#3 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Descriptor/Descriptor.php(55): Symfony\\Component\\Console\\Descriptor\\TextDescriptor->describeApplication()
+#4 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Helper/DescriptorHelper.php(65): Symfony\\Component\\Console\\Descriptor\\Descriptor->describe()
+#5 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Command/ListCommand.php(75): Symfony\\Component\\Console\\Helper\\DescriptorHelper->describe()
+#6 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Command/Command.php(258): Symfony\\Component\\Console\\Command\\ListCommand->execute()
+#7 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(911): Symfony\\Component\\Console\\Command\\Command->run()
+#8 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand()
+#9 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#10 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#11 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#12 /home/marcelo/Documents/sis/labPHP/laravel/test/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#13 {main}
+"} 
+[2020-05-31 23:00:12] local.ERROR: Command "create_departments" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"create_departments\" is not defined. at /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php:644)
+[stacktrace]
+#0 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find()
+#1 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#3 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /home/marcelo/Documents/sis/labPHP/laravel/test/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 
+[2020-06-06 16:12:22] local.ERROR: SQLSTATE[HY000] [2002] Connection refused (SQL: SHOW FULL TABLES WHERE table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] Connection refused (SQL: SHOW FULL TABLES WHERE table_type = 'BASE TABLE') at /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php:671)
+[stacktrace]
+#0 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(745): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(725): Illuminate\\Database\\Connection->tryAgainIfCausedByLostConnection()
+#2 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(634): Illuminate\\Database\\Connection->handleQueryException()
+#3 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(339): Illuminate\\Database\\Connection->run()
+#4 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(99): Illuminate\\Database\\Connection->select()
+#5 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(48): Illuminate\\Database\\Schema\\MySqlBuilder->getAllTables()
+#6 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php(69): Illuminate\\Database\\Schema\\MySqlBuilder->dropAllTables()
+#7 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php(46): Illuminate\\Database\\Console\\WipeCommand->dropAllTables()
+#8 [internal function]: Illuminate\\Database\\Console\\WipeCommand->handle()
+#9 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(33): call_user_func_array()
+#10 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(91): Illuminate\\Container\\Util::unwrapIfClosure()
+#12 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#13 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/Container.php(592): Illuminate\\Container\\BoundMethod::call()
+#14 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call()
+#15 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute()
+#16 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#17 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(56): Illuminate\\Console\\Command->run()
+#18 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(28): Illuminate\\Console\\Command->runCommand()
+#19 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php(41): Illuminate\\Console\\Command->call()
+#20 [internal function]: Illuminate\\Database\\Console\\Migrations\\FreshCommand->handle()
+#21 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(33): call_user_func_array()
+#22 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(91): Illuminate\\Container\\Util::unwrapIfClosure()
+#24 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#25 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/Container.php(592): Illuminate\\Container\\BoundMethod::call()
+#26 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call()
+#27 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute()
+#28 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#29 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run()
+#30 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand()
+#31 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#32 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#33 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#34 /home/marcelo/Documents/sis/labPHP/laravel/test/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#35 {main}
+
+[previous exception] [object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] Connection refused at /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct()
+#1 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(100): Illuminate\\Database\\Connectors\\Connector->createPdoConnection()
+#2 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(50): Illuminate\\Database\\Connectors\\Connector->tryAgainIfCausedByLostConnection()
+#3 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection()
+#4 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect()
+#5 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#6 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(926): call_user_func()
+#7 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(961): Illuminate\\Database\\Connection->getPdo()
+#8 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(405): Illuminate\\Database\\Connection->getReadPdo()
+#9 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(331): Illuminate\\Database\\Connection->getPdoForSelect()
+#10 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(664): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#11 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(745): Illuminate\\Database\\Connection->runQueryCallback()
+#12 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(725): Illuminate\\Database\\Connection->tryAgainIfCausedByLostConnection()
+#13 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(634): Illuminate\\Database\\Connection->handleQueryException()
+#14 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Connection.php(339): Illuminate\\Database\\Connection->run()
+#15 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(99): Illuminate\\Database\\Connection->select()
+#16 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(48): Illuminate\\Database\\Schema\\MySqlBuilder->getAllTables()
+#17 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php(69): Illuminate\\Database\\Schema\\MySqlBuilder->dropAllTables()
+#18 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Console/WipeCommand.php(46): Illuminate\\Database\\Console\\WipeCommand->dropAllTables()
+#19 [internal function]: Illuminate\\Database\\Console\\WipeCommand->handle()
+#20 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(33): call_user_func_array()
+#21 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(91): Illuminate\\Container\\Util::unwrapIfClosure()
+#23 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#24 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/Container.php(592): Illuminate\\Container\\BoundMethod::call()
+#25 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call()
+#26 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute()
+#27 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#28 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(56): Illuminate\\Console\\Command->run()
+#29 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(28): Illuminate\\Console\\Command->runCommand()
+#30 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php(41): Illuminate\\Console\\Command->call()
+#31 [internal function]: Illuminate\\Database\\Console\\Migrations\\FreshCommand->handle()
+#32 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(33): call_user_func_array()
+#33 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#34 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(91): Illuminate\\Container\\Util::unwrapIfClosure()
+#35 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#36 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Container/Container.php(592): Illuminate\\Container\\BoundMethod::call()
+#37 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call()
+#38 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Command/Command.php(258): Illuminate\\Console\\Command->execute()
+#39 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#40 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(911): Illuminate\\Console\\Command->run()
+#41 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand()
+#42 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#43 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#44 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#45 /home/marcelo/Documents/sis/labPHP/laravel/test/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#46 {main}
+"} 
+[2020-06-06 16:33:36] local.ERROR: There are no commands defined in the "migrations" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"migrations\" namespace. at /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php:574)
+[stacktrace]
+#0 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(625): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find()
+#2 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#3 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#4 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#5 /home/marcelo/Documents/sis/labPHP/laravel/test/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
+[2020-06-06 16:33:49] local.ERROR: There are no commands defined in the "migration" namespace.
+
+Did you mean this?
+    migrate {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"migration\" namespace.
+
+Did you mean this?
+    migrate at /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php:574)
+[stacktrace]
+#0 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(625): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(228): Symfony\\Component\\Console\\Application->find()
+#2 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#3 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#4 /home/marcelo/Documents/sis/labPHP/laravel/test/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#5 /home/marcelo/Documents/sis/labPHP/laravel/test/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
