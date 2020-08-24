@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "admin-lte": "^3.0.0-alpha.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "jquery": "^3.5.0"
   }
 }
