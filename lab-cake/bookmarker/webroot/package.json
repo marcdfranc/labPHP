@@ -11,6 +11,6 @@
   "dependencies": {
     "admin-lte": "^3.0.0-alpha.2",
     "bootstrap": "^3.3.7",
-    "jquery": "^1.11.3"
+    "jquery": "^3.5.0"
   }
 }
